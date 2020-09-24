@@ -170,8 +170,9 @@
 .bg-sheet:nth-child(6){
     left: -90px;
     width: 400px;
+
     bottom: 1%;
-    filter: blur(0.9px);
+    filter: blur(0.9px) drop-shadow(2px 4px 4px black);
     transform: rotate(46deg);
 }
 
