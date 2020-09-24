@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+@font-face {
+    font-family: 'Sofia';
+    src: url('fonts/Sofia/sofia-regular-webfont.eot');
+    src: url('fonts/Sofia/sofia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Sofia/sofia-regular-webfont.woff') format('woff'),
+         url('fonts/Sofia/sofia-regular-webfont.ttf') format('truetype'),
+         url('fonts/Sofia/sofia-regular-webfont.svg#sofiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+.title{
+    background-image: url('pictures/bg-01.jpg');
+    background-size: contain;
+    height: 350px;
+    box-shadow: 0 0 20px black;
+}
+.title-text{
+    font: 54px/54px 'Sofia', Arial, sans-serif;
+    color: white;
+    text-shadow: 0 0 4px black;
+    margin: 0 auto;
+    padding-top: 250px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 30px;
+    color: #505050;
+    padding-top: 32px;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+    font-size: 24px;
+    color: #ffffffe3;
+    width: 80%;
+    line-height: 1.3em;
+    text-align: justify;
+    display: flex;
+    padding-top: 32px;
+    background-color: #0005;
+    padding: 18px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #0000006b;
+}
+
+.transition-timer-carousel .carousel-caption {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.carousel-inner{
+    position: relative;
+    overflow: hidden;    
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 4px black;
+}
+.carousel{
+    margin-top:48px
+}
+.item{
+    max-height: 480px;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+    margin-top: 10px;
+	font-size: 24px;
+}
+@media (min-width: 970px) {
+    /* Lower the font size of the carousel caption header so that our caption
+    doesn't take up the full image/slide on smaller screens */
+	.transition-timer-carousel .carousel-caption .carousel-caption-header {
+		font-size: 36px;
+	}
+}
+.transition-timer-carousel .carousel-indicators {
+    margin-top: 48px;
+	bottom: 0px;
+	margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+    z-index: 11;
+    display: none;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+	-moz-transition: width 4.25s linear;
+	-o-transition: width 4.25s linear;
+	transition: width 4.25s linear;
+}
+
+.bg-sheets{
+    position: absolute;
+    width: 100%;
+    z-index: -99;
+    height: 100%;
+}
+.bg-sheet{
+    position: absolute;
+}
+.bg-sheet:nth-child(1){
+    width: 54px;
+    top: 58%;
+    transform: rotate(127deg);
+    left: 56%;
+    filter: blur(5px);
+}
+.bg-sheet:nth-child(2){
+    width: 130px;
+    left: 20%;
+    top: 40%;
+    transform: rotate(74deg);
+    filter: blur(2px);
+}
+.bg-sheet:nth-child(3){
+    width: 90px;
+    right: 30%;
+    top: 25%;
+    filter: blur(3px);
+}
+.bg-sheet:nth-child(4){
+    right: 20px;
+    width: 340px;
+    bottom: 25%;
+    filter: drop-shadow(1px 2px 3px black) blur(0.4px);
+}
+.bg-sheet:nth-child(5){
+    width: 97px;
+    top: 16%;
+    left: 37%;
+    filter: blur(6px);
+    transform: rotate(208deg);
+}
+.bg-sheet:nth-child(6){
+    left: -90px;
+    width: 400px;
+    bottom: 1%;
+    filter: blur(0.9px);
+    transform: rotate(46deg);
+}
+
+footer{
+    position: relative;
+    font-size: 18px;
+    margin-top:18px;
+    background-color: #3d4045;
+    color: #afafaf;
+    letter-spacing: 1.1px;
+}
+.contacts{
+    justify-content: space-around;
+    display: flex;
+}
+.phone{
+    margin-top:24px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    display: inline;
+    margin: 16px 16px 0 16px;
+}
+.contacts img{
+    width: 48px;
+    filter: grayscale(0.2);
+    
+    box-shadow: 0 0 10px #ffffff40;
+    border-radius: 48px;
+}
+
+@media (max-width:640px){
+    .title{
+        background-image: url('pictures/bg-01.jpg');
+        background-size: cover;
+        height: 350px;
+        
+    }
+    .title-text{
+        font: 54px/54px 'Sofia', Arial, sans-serif;
+        color: white;
+        text-shadow: 0 0 4px black;
+        margin: 0 auto;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+}

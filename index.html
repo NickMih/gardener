@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="title">
+        <div class="title-text">
+            Hi, I am Romain Gardener  
+        </div>
+    </div>
+    <div class="bg-sheets">
+        <img class="bg-sheet" src="pictures/leaves-1.png">  
+        <img class="bg-sheet" src="pictures/leaves-2.png"> 
+        <img class="bg-sheet" src="pictures/leaves-2.png"> 
+        <img class="bg-sheet" src="pictures/leaves-4.png">  
+        <img class="bg-sheet" src="pictures/leaves-1.png">  
+        <img class="bg-sheet" src="pictures/leaves-5.png">  
+    </div>
+    <div class="container">
+        <div class="container subtitle">
+            What does it mean?
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam dolores natus quasi sapiente, sunt hic unde optio rerum voluptas numquam earum doloribus vero dignissimos dicta alias autem quod repellat dolorum, assumenda, voluptates neque debitis facere est. Aliquid, quaerat. Quod neque, nulla repudiandae exercitationem, corporis eius dolor debitis dolores illo saepe praesentium. Vel, ipsum repellat. Suscipit totam neque dolorem similique vel odit cupiditate, recusandae, voluptate illum repudiandae culpa, excepturi est nihil non. Sint placeat at exercitationem molestias autem, dolores distinctio ex natus delectus, facere dignissimos perspiciatis laboriosam a pariatur quasi dicta quia. Perspiciatis doloremque vero laborum maxime! Omnis cupiditate labore sint rerum sed optio vitae incidunt. Sint sit animi qui earum, cum vero in adipisci nam facilis est temporibus dolorem quae sed ducimus perspiciatis placeat consequuntur veniam, incidunt, aliquid enim ipsa? Quia aliquid iusto, assumenda veniam sapiente quidem esse error delectus ipsam accusantium fugit culpa est, recusandae quos, cupiditate dolorem temporibus quae. Corrupti magni facilis quis.
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="row">
+            <!-- The carousel -->
+            <div id="transition-timer-carousel" class="carousel slide transition-timer-carousel" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#transition-timer-carousel" data-slide-to="0" class=""></li>
+                    <li data-target="#transition-timer-carousel" data-slide-to="1" class=""></li>
+                    <li data-target="#transition-timer-carousel" data-slide-to="2" class=""></li>
+                </ol>
+    
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="https://images.pexels.com/photos/147640/pexels-photo-147640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="https://images.pexels.com/photos/226424/pexels-photo-226424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controls -->
+                <a class="left carousel-control" href="#transition-timer-carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#transition-timer-carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                
+                <!-- Timer "progress bar" -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contacts">
+            <div class="phone">Phone: +3 333 333 33 33 </div>
+            <ul class="social-icons">
+                <li><a href="http://www.gmail.com"><img src='pictures/gmail.png' /></a></li>
+                <li><a href="http://www.facebook.com"><img src='pictures/fb.png' /></a></li>
+                <li><a href="http://www.instagramm.com"><img src='pictures/inst.png' /></a></li>
+            </ul></div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {    
+        //Events that reset and restart the timer animation when the slides change
+        $("#transition-timer-carousel").on("slide.bs.carousel", function(event) {
+            //The animate class gets removed so that it jumps straight back to 0%
+            $(".transition-timer-carousel-progress-bar", this)
+                .removeClass("animate").css("width", "0%");
+        }).on("slid.bs.carousel", function(event) {
+            //The slide transition finished, so re-add the animate class so that
+            //the timer bar takes time to fill up
+            $(".transition-timer-carousel-progress-bar", this)
+                .addClass("animate").css("width", "100%");
+        });
+        
+        //Kick off the initial slide animation when the document is ready
+        $(".transition-timer-carousel-progress-bar", "#transition-timer-carousel")
+            .css("width", "100%");
+    });	</script>
+    
+</body>
+</html>
