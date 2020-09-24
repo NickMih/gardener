@@ -32,7 +32,7 @@
     text-align: center;
 }
 .subtitle{
-    font-size: 30px;
+    font-size: 32px;
     color: #505050;
     padding-top: 32px;
     font-weight: bold;
@@ -41,9 +41,10 @@
     text-transform: uppercase;
 }
 .text{
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffffe3;
     width: 80%;
+    letter-spacing: 1.1px;
     line-height: 1.3em;
     text-align: justify;
     display: flex;
