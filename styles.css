@@ -14,8 +14,11 @@
          url('fonts/Sofia/sofia-regular-webfont.svg#sofiaregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
-
+}
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+html, body {
+    height: auto;
+    position: relative;
 }
 .title{
     background-image: url('pictures/bg-01.jpg');
@@ -23,6 +26,7 @@
     height: 350px;
     box-shadow: 0 0 20px black;
     position: relative;
+    width: 100%;
 }
 .title-text{
     font: 54px/54px 'Sofia', Arial, sans-serif;
@@ -43,18 +47,17 @@
 }
 .text{
     font-size: 20px;
-    color: #ffffffe3;
+    font-family: 'Bitter', serif;
+    color: #000;
     width: 80%;
     letter-spacing: 1.1px;
     line-height: 1.3em;
     text-align: justify;
     display: flex;
     padding-top: 32px;
-    background-color: #0005;
     padding: 18px;
     margin: 0 auto;
     border-radius: 4px;
-    box-shadow: 0 0 20px #0000006b;
 }
 
 .transition-timer-carousel .carousel-caption {
@@ -131,50 +134,241 @@
     width: 100%;
     z-index: -99;
     height: 100%;
+    overflow: hidden;
 }
 .bg-sheet{
     position: absolute;
+    top: -20%;
 }
 .bg-sheet:nth-child(1){
-    width: 54px;
-    top: 58%;
+    width: 60px;
     transform: rotate(127deg);
-    left: 56%;
-    filter: blur(5px);
-}
-.bg-sheet:nth-child(2){
-    width: 130px;
-    left: 20%;
-    top: 40%;
-    transform: rotate(74deg);
-    filter: blur(2px);
-}
-.bg-sheet:nth-child(3){
-    width: 90px;
-    right: 30%;
-    top: 25%;
+    left: 4%;
     filter: blur(3px);
+    animation: animate 30s linear infinite;
+    animation-delay: -4s;
+}
+
+
+.bg-sheet:nth-child(2){
+    width: 80px;
+    left: 14%;
+    transform: rotate(70deg);
+    filter: blur(1.5px);
+    animation: animate 25s linear infinite;
+    animation-delay: 4s
+}
+
+.bg-sheet:nth-child(3){
+    width: 55px;
+    left: 18%;
+    filter: blur(5px);
+    animation: animate 31s linear infinite;
+    animation-delay: -6s
 }
 .bg-sheet:nth-child(4){
-    right: 20px;
-    width: 340px;
-    bottom: 25%;
-    filter: drop-shadow(1px 2px 3px black) blur(0.4px);
+    width: 85px;
+    left: 27%;
+    filter: blur(1.5px);
+    transform: rotate(208deg);
+    animation: animate 22s linear infinite;
+    animation-delay: -8s
 }
 .bg-sheet:nth-child(5){
-    width: 97px;
-    top: 16%;
-    left: 37%;
-    filter: blur(6px);
+    width: 75px;
+    left: 32%;
+    filter: blur(2px);
     transform: rotate(208deg);
+    animation: animate 25s linear infinite;
+    animation-delay: 6s
 }
 .bg-sheet:nth-child(6){
-    left: -90px;
-    width: 400px;
+    width: 70px;
+    left: 38%;
+    filter: blur(2.1px);
+    transform: rotate(208deg);
+    animation: animate 28s linear infinite;
+    animation-delay: 1s
+}
+.bg-sheet:nth-child(7){
+    width: 85px;
+    left: 43%;
+    filter: blur(1.5px);
+    transform: rotate(208deg);
+    animation: animate 24s linear infinite;
+    animation-delay: -1s
+}
+.bg-sheet:nth-child(8){
+    width: 45px;
+    left: 50%;
+    filter: blur(6px);
+    transform: rotate(208deg);
+    animation: animate 35s linear infinite;
+    animation-delay: 1s
+}
 
-    bottom: 1%;
-    filter: blur(0.9px) drop-shadow(2px 4px 4px black);
-    transform: rotate(46deg);
+
+.bg-sheet:nth-child(9){
+    width: 49px;
+    left: 58%;
+    filter: blur(6px);
+    transform: rotate(208deg);
+    animation: animate 33s linear infinite;
+    animation-delay: 10s
+}
+.bg-sheet:nth-child(10){
+    width: 57px;
+    left: 63%;
+    filter: blur(5px);
+    transform: rotate(208deg);
+    animation: animate 30s linear infinite;
+    animation-delay: 8s
+}
+.bg-sheet:nth-child(11){
+    width: 67px;
+    left: 71%;
+    filter: blur(4px);
+    transform: rotate(208deg);
+    animation: animate 29s linear infinite;
+    animation-delay: 12s
+}
+.bg-sheet:nth-child(12){
+    width: 80px;
+    left: 77%;
+    filter: blur(2px);
+    transform: rotate(208deg);
+    animation: animate 26s linear infinite;
+    animation-delay: 16s
+}
+.bg-sheet:nth-child(13){
+    width: 60px;
+    left: 80%;
+    filter: blur(3px);
+    transform: rotate(208deg);
+    animation: animate 31s linear infinite;
+    animation-delay: 6s
+}
+.bg-sheet:nth-child(14){
+    width: 70px;
+    left: 35%;
+    filter: blur(2px);
+    transform: rotate(208deg);
+    animation: animate 30s linear infinite;
+    animation-delay: 7s
+}
+
+.bg-sheet:nth-child(15){
+    width: 45px;
+    left: 10%;
+    filter: blur(4px);
+    transform: rotate(208deg);
+    animation: animate 34s linear infinite;
+    animation-delay: 14s
+}
+.bg-sheet:nth-child(16){
+    width: 68px;
+    left: 92%;
+    filter: blur(2px);
+    transform: rotate(208deg);
+    animation: animate 30s linear infinite;
+    animation-delay: 14s
+}
+.bg-sheet:nth-child(17){
+    width: 77px;
+    left: 98%;
+    filter: blur(1.1px);
+    transform: rotate(208deg);
+    animation: animate 26s linear infinite;
+    animation-delay: 14s
+}
+.bg-sheet:nth-child(18){
+    width: 87px;
+    left: 13%;
+    filter: blur(1px);
+    transform: rotate(208deg);
+    animation: animate 24s linear infinite;
+    animation-delay: 14s
+}
+.bg-sheet:nth-child(19){
+    width: 75px;
+    left: 41%;
+    filter: blur(1.5px);
+    transform: rotate(208deg);
+    animation: animate 28s linear infinite;
+    animation-delay: -15s
+}
+.bg-sheet:nth-child(20){
+    width: 65px;
+    left: 91%;
+    filter: blur(3px);
+    transform: rotate(208deg);
+    animation: animate 29s linear infinite;
+    animation-delay: 2s
+}
+.bg-sheet:nth-child(21){
+    width: 82px;
+    left: 90%;
+    filter: blur(2px);
+    transform: rotate(208deg);
+    animation: animate 25s linear infinite;
+    animation-delay: -5s
+}
+
+@keyframes animate{
+    0%{
+        top: -10%;
+    }
+    10%{
+        top: 8%;
+        transform: translateX(20px) rotate(45deg);
+
+    }
+    20%{
+        top: 18%;
+        transform: translateX(-20px) rotate(100deg);
+
+    }
+    30%{
+        top: 31%;
+        transform: translateX(20px) rotate(60deg);
+
+    }
+    40%{
+        top: 39%;
+        transform: translateX(-20px) rotate(115deg);
+
+    }
+    50%{
+        top: 52%;
+        transform: translateX(20px) rotate(65deg);
+
+    }
+    60%{
+        top: 62%;
+        transform: translateX(20px) rotate(110deg);
+
+    }
+    70%{
+        top: 73%;
+        transform: translateX(-20px) rotate(70deg);
+
+    }
+    80%{
+        top: 84%;
+        transform: translateX(20px) rotate(150deg);
+
+    }
+    90%{
+        top: 92%;
+        transform: translateX(-20px) rotate(100deg);
+
+    }
+    100%{
+        top: 125%;
+        transform: translateX(20px) rotate(150deg);
+
+    }
+
 }
 
 footer{
@@ -192,12 +386,17 @@ footer{
 .phone{
     font: 24px/24px 'Sofia', Arial, sans-serif;
     color: #fff;
-    text-align: right;
-    bottom: 20px;
-    right: 20px;
     position: absolute;
-    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
     text-shadow: 0px 0px 20px white;
+}
+.phone-1{
+    display: flex;
+}
+.phone-2{
+    display: none;
 }
 ul{
     display: flex;
@@ -221,6 +420,13 @@ ul li{
         height: 350px;
         
     }
+    .phone-1{
+        display: none;
+    }
+    .phone-2{
+        display: flex;
+        width: 204px;
+    }
     .title-text{
         font: 54px/54px 'Sofia', Arial, sans-serif;
         color: white;
@@ -229,8 +435,22 @@ ul li{
         padding-top: 100px;
         text-align: center;
     }
-    .bg-sheet:nth-child(4){
+    .bg-sheet:nth-child(2n+1){
         display: none;
     }
+    .text{
+        font-size: 18px;
+        font-family: 'Bitter', serif;
+        color: #000;
+        width: 90%;
+        letter-spacing: 1.1px;
+        line-height: 1.3em;
+        text-align: justify;
+        display: flex;
+        padding-top: 32px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+    
 
 }
